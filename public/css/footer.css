@@ -1,0 +1,86 @@
+/* General styling */
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d30d0d;
+} */
+
+/* Footer styling */
+
+.mrg-foo{
+    margin-left: 0px;
+}
+
+.foo-site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 200px;
+    margin-top: 50px;
+  
+}
+
+.foo-site-footer h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* .foo-site-footer p {
+    margin: 15px 0;
+} */
+
+.foo-site-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.foo-footer-social img{
+    height: 40px;
+    width: 40px;
+    margin: 0 10px; 
+
+}
+.foo-row {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+  
+  }
+.foo1-row{
+    display: flex;
+    gap: none;
+}
+
+.foo-hov {
+    position: relative;
+    /* height: 50px;
+    width: 50px; */
+    transition: 0.5s;
+    
+}
+
+.foo-top-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+    transition: all 0.5s ease;
+}
+.foo-top-img:hover{
+    opacity: 1;
+}
+  .foo-horizontal-line {
+    margin-top: 15px;
+    width: 100%; 
+    height: 1px; 
+    background-color: #c7c7c7;
+  } 
+
+
+
+.foo-copyright {
+    
+    font-size: 12px;
+    color: #fff;
+}

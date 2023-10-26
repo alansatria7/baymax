@@ -1,0 +1,470 @@
+
+/* ******body****** */
+.loader {
+  position: relative;
+  display: flex;
+}
+.loader:before , .loader:after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    margin: 0  5px  ;
+    border-radius: 50%;
+    color: #0073ff;
+    background: currentColor;
+    box-shadow: 50px 0 ,  -50px 0;
+    animation: left 1s infinite ease-in-out;
+  }
+  .loader:after {
+    color: #FF3D00;
+    animation: right 1.1s infinite ease-in-out;
+  }
+
+
+@keyframes right {
+  0% , 100%{transform: translateY(-10px) }
+  50% { transform: translateY(10px) }
+}
+
+@keyframes left {
+  0% , 100%{ transform: translateY(10px) }
+  50% { transform: translateY(-10px) }
+}
+    
+
+
+
+
+
+.card {
+  width: 300px;
+  padding: 20px;
+  background-color: #03011d;
+  border: 1px solid #28272b;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto; /* Membuat card menjadi di tengah halaman */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS untuk item di tengah */
+.center-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Tinggi item di tengah */
+}
+
+
+
+
+
+
+.body {
+    background-color: #ff3c00;
+}
+.d-kata1{
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    margin-top: 125px;
+    margin-left: 70px;
+    font-style: 900;
+   
+}
+
+.d-kata2 {
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    margin-left: 70px;
+    margin-top: 35px;
+    
+}
+.d-btn1 {
+    background-color: #ffffff;
+    border: 3px solid #558DD3;
+    margin-left: 70px;
+    padding: 15px;
+    width: 200px;
+    font-size: 25px;
+    margin-top: 55px;
+    cursor: pointer;
+    border-radius: 10px;
+    justify-items: center;
+    text-align: center;
+    
+  
+}
+.d-btn1 a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.d-btn1:hover {
+    background-color: #558DD3;
+    transition: 0.5s;
+}
+
+.d-btn1:hover a {
+    color: #ffffff;
+}
+
+.row {
+    display: flex;
+
+} 
+
+.d-foto1 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    margin-top: 125px;
+    margin-left: 245px;
+    height: 397px;
+}
+
+.d-kata3 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    margin-top: 100px;
+    text-align: center;
+    
+}
+
+.d-foto2 {
+    /* box-shadow: 6px 6px rgba(136, 136, 136, 0.119); */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    margin-top: 115px;
+    margin-left: 70px;
+    height: 357px;
+    
+}
+
+.d-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 170px;
+    margin-right: 70px;
+}
+
+  
+.d-step {
+    display: flex;
+    gap: 15px;  
+    /* margin-bottom: 20px; */
+}
+
+.d-step i{
+    margin-top: 35px;
+    margin-left: 30px;
+    font-size: 40px;
+    color: #ED6435;
+}
+
+.d-step p{
+    font-size: 22px;
+    margin-left: 5px;
+    margin-top: 35px
+}
+  
+
+.d-row1 {
+    display: flex;
+    margin-top: 50px;
+
+} 
+
+.d-row2 {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 70px;
+
+}
+
+
+.d-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-dropdown {
+  position: relative;
+  margin-bottom: 10px;
+  width: 255px;
+}
+
+.dropdown-toggle {
+  display: block;
+  cursor: pointer;
+}
+
+
+.dropdown-toggle p {
+  margin: 0;
+  padding: 15px 0px 15px 20px;
+  background-color: white;
+  border: 2px solid #0975d3;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: medium;
+  width: 420px;
+  color: #333;
+}
+
+.dropdown-menu {
+  margin-top: 5px;
+  display: none;
+  color: #ffffff;
+  background-color: #0975d3;
+  border: 2px solid #0975d3;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 0px 0px 0px 20px;
+  width: 420px;
+  font-size: 20px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.d-dropdown.active .dropdown-menu {
+  display: block;
+  max-height: 500px; 
+}
+
+
+
+
+.foto3{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    margin-right: 70px;
+    margin-left: 410px;
+    margin-top:40px;
+    height: 357px;
+    
+}
+ 
+
+
+
+
+
+/* 
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-btn {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .faq {
+    margin: 10px 20px;
+  }
+  
+  .question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .answer {
+    display: none;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-left: 30px;
+  }
+  
+  .answer p {
+    margin-bottom: 10px;
+  }
+  
+  .question:hover {
+    text-decoration: underline;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-btn {
+    background-color: #eee;
+  }
+   */
+
+  
+
+
+
+
+
+
+    
+
+
+
+
+/* responsive */
+/* 
+@media screen and (max-width: 650px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #000000;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s all;
+    }
+
+    header nav.active {
+        left: 0;
+    }
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        color: rgb(225, 225, 225);
+    }
+
+  
+
+} */
+
+
+/* Add this code to the end of your existing CSS */
+/* 
+@media screen and (max-width: 668px) {
+    .kata1 {
+      font-size: 30px;
+      margin-top: 50px;
+      margin-left: 20px;
+    }
+  
+    .kata2 {
+      font-size: 25px;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+  
+    .btn1 {
+      padding: 10px 30px;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+  
+    .foto1 {
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      height: auto;
+      border-radius: 0;
+    }
+  
+    .kata3 {
+      font-size: 25px;
+      margin-top: 50px;
+    }
+  
+    .foto2 {
+      margin-top: 50px;
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 90%;
+      height: auto;
+      border-radius: 0;
+    }
+  
+    .txt {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .numbered-box {
+      font-size: 15px;
+      margin-right: 10px;
+    }
+  
+    .dropdown-toggle {
+      padding: 5px 20px;
+      width: 100%;
+      height: auto;
+      font-size: 15px;
+      margin-top: 20px;
+    }
+  
+    .dropdown-menu {
+      padding: 10px 20px;
+      font-size: 15px;
+      background-color: #ffffff;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      transform: translateY(-10px);
+    }
+  
+    .dropdown:hover .dropdown-menu,
+    .dropdown-menu:hover {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    
+    .dropdown:hover .dropdown-toggle i {
+      transform: none;
+    }
+  
+    .foto3{
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-top: 50px;
+      width: 90%;
+      height: auto;
+      border-radius: 0;
+    }
+  }
+  
+  
+
+ */

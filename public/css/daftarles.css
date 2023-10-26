@@ -1,0 +1,289 @@
+
+.body{
+    background-color: #F2FBFF;
+}
+
+.atur-l{
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-l{
+    width: 700px;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 10px;
+    padding: 10px;
+   
+  
+}
+
+.kata-1{
+    font-size: 32px;
+    margin-top: 30px;
+    margin-left: 30px;
+    color: #ED6435;
+}
+
+.kata-2{
+    font-size: 30px;
+    margin-left: 30px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.kata-3{
+    margin-top: -20px;
+    font-size: 20px;
+    margin-left: 30px;
+    color: #000000;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+
+  
+  .card-l input {
+    margin-left: 30px;
+    width: 350px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+  }
+
+  .drp-l{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  
+  /* Dropdown button */
+  .dropbtn {
+    background-color: #f2f2f2;
+    color: #6f6f6f;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 350px;
+    height: 60px;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    
+  }
+
+  .dropdown:hover{
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+
+  .dropbtn i{
+    align-items: right;
+    color: #000000;
+    margin-left: 190px;
+    
+
+  }
+  
+
+  .dropdown-content {
+    margin-top: 5px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 350px;
+    border-radius:  5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+
+  .dropdown-content a {
+    color: rgb(137, 137, 137);
+    padding: 12px 16px;
+    text-decoration: none;
+    border-radius:5px;
+    display: block;
+  }
+  
+ 
+
+  
+ 
+
+
+    .card {
+        margin-top: 30px;
+        margin-left: 40px;
+        background-color: rgb(255, 255, 255);
+        height: 480px;
+        align-items: center;
+        margin-right: 30px;
+        width: 250px;
+        overflow: hidden;
+        /* border: 1px solid #ccc; */
+    }
+
+.mdl i{
+    margin-top: 25px;
+    margin-left: 20px;
+    font-size: 25px;
+    color: #F8A401;
+}
+.mdl a{
+    margin-top: 25px;
+    margin-left: 255px;
+    font-size: 25px;
+}
+
+
+.foto1 {
+    border-radius: 15px;
+    margin-top: 1px;
+    width: 250px;
+    height: 280px;
+}
+
+.card-content1 {
+    padding: 5px;
+    
+}
+ 
+
+.card-content1 h1{
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1px;
+    font-size: 20px;
+}
+
+.number {
+    font-weight: 900;
+    font-size: 15px;
+    margin-left: 55px;
+    margin-top: -10px;
+}
+
+.number i {
+    color: #F8A401;
+}
+
+.ulasan {
+    margin-top: -10px;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.step {
+    display: flex;
+
+}
+
+
+
+.tarif {
+    margin-top: 15px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.harga {
+    margin-top: 10px;
+    margin-left: 35px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.waktu {
+    margin-top: 5px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.jm {
+    margin-top: 1px;
+    margin-left: 85px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.jmlh {
+    margin-top: 5px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.no {
+    margin-top: 1px;
+    margin-left: 120px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+
+.row-l{
+    display:flex ;
+}
+
+.row-pp{
+    margin-top: 100px;
+    margin-left: 150px;
+   
+;
+   
+}
+
+.btn-k{
+    padding: 18px 60px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ff0000;
+    font-size: 15px;
+    color: #ff0000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-k:hover{
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.btn-j{
+    margin-left: 10px;
+    padding: 18px 50px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #558DD3;
+    font-size: 15px;
+    color: #558DD3;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-j:hover{
+    background-color: #558DD3;
+    color: #ffffff;
+}
