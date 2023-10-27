@@ -13,32 +13,14 @@
 </head>
 <body>
   
-  @include('nav.nav')
- 
+  @include('nav.nav') 
     <!-- header section starts  -->
 
     
    
 
     <h2 class="mtr" >Guru semua materi</h2>
-
-    {{-- <form action="listticher">
-
-      <select name="guru_id" class="form-select">
-        <option selected value="" name="guru_id" style="text-align: center" id="guru_id">
-            Mapel</option>
-
-        @foreach ($guru as $guru)
-            @if (request('guru_id') == $guru->id)
-                <option name="guru_id" value="{{ $guru->id }}" selected>{{ $guru->mapel }}
-                </option>
-            @else
-                <option name="guru_id" value="{{ $guru->id }}">{{ $guru->mapel }}</option>
-            @endif
-        @endforeach
-
-    </select>
-    </form> --}}
+      
       
     <div class="row01">
    
@@ -49,7 +31,7 @@
           </div>
           <ul class="menu">
             <li>Semua</li>
-            <li> Matematika</li>
+            <li>Matematika</li>
             <li>Fisika</li>
             <li>Biologi</li>
             <li>Kimia</li>
@@ -84,6 +66,24 @@
     <div class="overlay"></div>
     <h2 class="terse" >190 Guru  tersedia</h2>
 
+
+    <form action="/listteacher" method="GET" id="filterForm">
+      <select class="selected" name="mapel" id="mapel" onchange="handleChange()">
+         
+           <option class="selected" value="">Semua Mapel</option>
+
+            
+          @foreach ($mapels as $mapel)
+          <ul class="menu">
+              <option  value="{{ $mapel }}" {{ request('mapel') == $mapel ? 'selected' : '' }}>
+                  {{ $mapel }}
+              </option>
+          </ul>
+          @endforeach
+            
+      </select>
+
+    </form>
    
  
 
@@ -109,22 +109,19 @@
             <div class="card5">
                 <div class="card-image">
                     <img class="pct" src="{{$guru->image}}" alt="1">
-                    {{-- <div class="heart"><i class="fa-solid fa-heart"></i></div> --}}
+                    <div class="heart"><i class="fa-solid fa-heart"></i></div>
                     <div class="image-text">{{$guru->nama}}</div>
                     <div class="image-text1">{{$guru->mapel}}</div>
                 </div>
         
                 <div class="card-content">
-                    {{-- <div class="step">
-                        <div class="number"><i class="fa-solid fa-star"></i>4</div>
-                        <p class="ulasan"></i>(53 Ulasan)</p>
-                    </div> --}}
+                    
                     <div class="lokasi">
                         {{$guru->intro}}
                     </div>
-        
+       
                     <div>
-                        <a class="btn" href="/detailguru"><p>Lihat Selengkapnya</p></a>
+                        <a class="btn" href="{{ route('detailguru.show', $guru) }}"><p>Lihat Selengkapnya</p></a>
                     </div>
                 </div>
             </div>
@@ -132,7 +129,7 @@
       
       @endforeach
 
-
+{{-- 
       <div class="card-container">
         
 
@@ -229,7 +226,7 @@
 
       
 
-    </div>    
+    </div>     --}}
 
 
 
@@ -240,6 +237,20 @@
     @include('nav.footer')
 
     <script  >
+       function handleChange() {
+        var select = document.getElementById('mapel');
+
+        // Jika memilih "Semua Mapel", atur nilai select menjadi kosong
+        if (select.value === 'Semua Mapel') {
+            select.value = '';
+        }
+
+        // Submit formulir secara otomatis
+        document.getElementById('filterForm').submit();
+    }
+
+
+
         const buttons = document.querySelectorAll(".btn");
         buttons.forEach(btn => {
           btn.onmousemove = function (e){

@@ -48,48 +48,11 @@
 
 
             <div class="card">
-                <div class="mdl">
-                    {{-- <div class="star">
-                        <a>
-                            <i class="bi bi-star-fill"></i>
-                        </a>
-                    </div>
-                    <div class="center-box">
-                        <div class="rating-box">
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <p>Ulasan</p>
-                        </div>
-                        <form>
-                            <textarea>Bagikan ulasan anda...</textarea>
-                        </form>
-
-                        <div class="gap">
-
-                            <a href="listteacher" class="btn-cn">Cencel</a>
-                            <a class="btn-sc">Succees</a>
-
-                        </div>
-
-
-                    </div> --}}
-
-                    {{-- <div class="heart"><i class="fa-solid fa-heart"></i></div> --}}
-                </div>
+               
                 <img class="foto1" src="img/org1.png" alt="">
                 <div class="card-content1">
                     <h1>{{$detail->nama}}</h1>
-                    {{-- <div class="step">
-                        <div class="number"><i class="fa-solid fa-star"></i>5</div>
-                        <p class="ulasan"></i>(53 Ulasan)</p>
-                    </div> --}}
+                   
 
                     <div class="step">
                         <div class="tarif">Tarif per bulan</div>

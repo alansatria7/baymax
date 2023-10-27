@@ -88,9 +88,13 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/detailguru', [DetailController::class, 'index']);
-Route::get('/detailguru2', [Detail_2Controller::class, 'index']);
-Route::get('/detailguru3', [Detail_3Controller::class, 'index']);
+
+route::get('/listteacher', [GuruController::class, 'index']);
+Route::get('/detailguru/{guru}', [GuruController::class, 'show'])->name('detailguru.show');
+// route::get('/detailguru/{id}', [GuruController::class, 'show'])->name('listteacher.show');
+// Route::get('/detailguru', [DetailController::class, 'index']);
+// Route::get('/detailguru2', [Detail_2Controller::class, 'index']);
+// Route::get('/detailguru3', [Detail_3Controller::class, 'index']);
 // Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
 // Route::post('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
 
@@ -115,4 +119,3 @@ Route::prefix('profile')->group(function () {
 });
 
 
-    

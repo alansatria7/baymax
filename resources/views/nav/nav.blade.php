@@ -28,7 +28,7 @@
         </div>
     </div>
       <a href="">Konsultasi</a>
-      <a href="#contact">Tentang kami</a>
+
       </div>
     </div>
       
@@ -61,7 +61,7 @@
       </a>
       <div class="avatar-dropdown-content" id="avatar-dropdown-content">
         <div class="prfl">
-          <div class="centered-content">
+          <div class="centered-content">    
               <img class="avatar2" src="img/org3.jpeg" alt="User Avatar">
                 <div>
 
