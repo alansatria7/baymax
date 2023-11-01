@@ -1,3 +1,4 @@
+@extends('layouts.main')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +15,7 @@
 
 <body >
 
-    @include('nav.nav')
+   
     <div class="row">
 
         <div>

@@ -119,6 +119,128 @@ class CardGuruSeeder extends Seeder
                
             ),
 
+
+
+            array(
+                'image' =>'/img/org3.jpeg',
+                'nama' => 'Valencia',
+                'nama2' => 'VALENCIA',
+                'mapel' => 'Menyanyi',
+                'mapel2' => 'Pelatihan vokal',
+                'mapel3' => 'Teori musik',
+                'mapel4' => '',
+                'mapel5' => '',
+                'intro' => 'Mengajarkan bernyanyi / Pelatihan Vokal tanpa harus ...',
+                'intro2' => 'Mengajarkan bernyanyi / Pelatihan Vokal tanpa harus menghilangkan karakter vocal. Sebelumnya saya sudah pernah mengajar di 2 lembaga musik di Kota Malang dan beberapa privat ke rumah rumah.',
+                'meet' => 'Melalui aplikasi Online',
+                'tentang' => 'Saya singer wedding dari 2012 hingga saat ini / sebelumnya saya pernah mengajar di 2 lembaga sekolah musik di kota Malang serta privat ke rumah rumah',
+                'tentang_2' => '',
+                'tentang_3' => 'Metode pengajaran saya berfokus ke karakter suara yang di miliki tiap tiap murid. Tanpa harus membaca not balok. Disini yang diutamakan adalah setiap murid bisa bernyanyi dengan teknik yang benar.',
+                'tentang_4' => '
+                Cara berpenampilan di panggung,
+                Ekspresi dalam menyanyikan lagu,
+                Teknik vocal,
+                Cara mengatasi gugup panggun,
+                Cara memegang mic dll 
+                ',
+                'tarif' => 'Rp100.000',
+                'tarif2' => 'Rp100.000/jam',
+                'tarif3' => '5 jam:  Rp500,000',
+                'tarif4' => '10 jam: Rp1,000,000',
+                'tarif5' => 'Rp100.000',
+                'waktu' => '4 jam',
+                'jumlah_murid' => '50',
+                'sd' => 'Pemula,Tahun Pertama,Tahun Ke-2,Tahun Ke-3,Tahun Ke-4,Anak-anak,Lainnya',
+                'smp' => '',
+                'sma' => '',
+               
+            ),
+
+
+
+            array(
+                'image' =>'/img/org5.png',
+                'nama' => 'Shinta',
+                'nama2' => 'SHINTA',
+                'mapel' => 'Bahasa Mandarin',
+                'mapel2' => 'Kosa kata - Bahasa Cina',
+                'mapel3' => 'Pemahaman lisan - Bahasa Cina',
+                'mapel4' => '',
+                'mapel5' => '',
+                'intro' => 'Guru bersertifikat HSK & HSKK, alumni ...',
+                'intro2' => 'Guru bersertifikat HSK & HSKK, alumni di STBA PIA Medan jurusan Sastra China. Saya sangat termotivasi untuk mengajarkan ilmu - ilmu yang telah saya pelajari pada murid yang memiliki minat semangat belajar.',
+                'meet' => 'Melalui aplikasi Online',
+                'tentang' => 'Tuntutlah ilmu sampai ke Negeri China .
+                Artinya Cari dan tuntutlah ilmu sejauh apa pun ilmu itu berada.',
+                'tentang_2' => '
+                Pendidikan Formal :
+                • Mahasiswa jurusan sastra China STBA PIA Medan tahun 2017 - 2021
+                • SMA Sutomo 1 (Jurusan IPS 2014 - 2017)
+                • TK - SD - SMP Sutomo 1 Medan
+
+                Pengalaman Kerja :
+                • 2018 - sekarang sebagai Guru bahasa Mandarin
+                • 2011 - sekarang sebagai Guru les private SD
+                • 2010 sebagai Guru les private TK
+                ',
+                'tentang_3' => 'Metode pengajaran saya adalah dengan buku-buku yang telah saya sediakan, dalam pengajaran saya akan mengajarkan membaca, menulis, menggambar, mendengar, berdialog, menghapal, bercerita, dan juga akan diberikan soal- soal untuk tes kemampuan murid tersebut, dan masih banyak lagi metode - metode pengajaran lainnya yang akan saya ajarkan dengan tips-tips supaya anda tidak merasa kesulitan dan bosan.',
+                'tentang_4' => '
+                 
+                ',
+                'tarif' => 'Rp90,000',
+                'tarif2' => 'Rp90,000/jam',
+                'tarif3' => '5 jam: Rp450,000',
+                'tarif4' => '10 jam:Rp900,000',
+                'tarif5' => 'Rp90,000',
+                'waktu' => '4 jam',
+                'jumlah_murid' => '50',
+                'sd' => 'Pemula,Tahun Pertama,Tahun Ke-2,Tahun Ke-3,Tahun Ke-4,Anak-anak,Lainnya',
+                'smp' => '',
+                'sma' => '',
+               
+            ),
+
+
+            array(
+                'image' =>'/img/org6.png',
+                'nama' => 'Shinta',
+                'nama2' => 'SHINTA',
+                'mapel' => 'Akuntansi',
+                'mapel2' => '',
+                'mapel3' => '',
+                'mapel4' => '',
+                'mapel5' => '',
+                'intro' => 'Lulusan Predikat Summa Cumlaude Jurusan Akuntansi...',
+                'intro2' => 'Lulusan Predikat Summa Cumlaude Jurusan Akuntansi Universitas Indonesia (Accounting FEB UI 2016) Menawarkan Privat Akuntansi',
+                'meet' => 'Melalui aplikasi Online',
+                'tentang' => '
+                Saya merupakan alumni dari jurusan akuntansi Universitas Indonesia. Saya berhasil menyelesaikan pendidikan saya dengan predikat Summa Cumlaude (GPA : 3,88) di Fakultas Ekonomi dan Bisnis Universitas Indonesia dan nilai A di semua mata kuliah yang saya ajarkan. Saya pernah mengisi materi untuk pelatihan para peserta Olimpiade Sains Provinsi Jambi untuk subjek Ekonomi dan memberikan privat kepada junior di kampus ketika mendekati masa UTS dan UAS. Saya juga memiliki pengalaman sebagai asisten dosen untuk mata kuliah Pengantar Akuntansi dan Akuntansi Manajemen dengan total siswa mencapai 150 orang. Sebagai tambahan, saya telah menyelesaikan kursus Brevet Perpajakan A&B di IAI (Ikatan Akuntan Indonesia).
+                ',
+                'tentang_2' => '
+                Materi yang saya cover :
+                Akuntansi dasar bagi pemula, Pengantar Akuntansi, Akuntasi Keuangan 1 dan 2, Akuntansi Biaya, dan Akuntansi Manajemen
+                ',
+                'tentang_3' => 'Materi yang saya sampaikan akan menyesuaikan dengan permintaan para siswa (by request). Sesi dapat diisi dengan pemaparan materi secara mendalam maupun berdiskuski bersama dalam mengerjakan soal-soal, baik pekerjaan rumah maupun soal-soal untuk persiapan mengikuti ujian atau tes. Materi dan soal akan menyesuaikan dengan kebutuhan para siswa. Bisa menggunakan PPT/soal yang diberikan oleh siswa maupun PPT/soal yang saya miliki.',
+                'tentang_4' => '',
+                'tarif' => 'Rp150,000',
+                'tarif2' => 'Rp150,000/jam',
+                'tarif3' => '5 jam: Rp700,000',
+                'tarif4' => '10 jam: Rp1,350,000',
+                'tarif5' => 'Rp150,000',
+                'waktu' => '2 jam',
+                'jumlah_murid' => '50',
+                'sd' => 'Sekolah Dasar (SD)',
+                'smp' => 'Sekolah Menengah Pertama (SMP)',
+                'sma' => 'Sekolah Menengah Atas (SMA) sampai
+                Diploma-4 (D4),Sarjana,Diploma-3 (D3)
+                ',
+               
+            ),
+
+
+
+            
+
             
 
 

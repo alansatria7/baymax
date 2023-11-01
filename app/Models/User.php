@@ -7,11 +7,25 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Support\Facades\Storage;
 
 
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
+    public function uploadImage($image)
+    {
+        $imageName = $this->id.'_profile.'.$image->getClientOriginalExtension();
+        $image->storeAs('profile_images', $imageName, 'public');
+
+        $this->profile_image = $imageName;
+        $this->save();
+    }
+
+    public function getImageUrl()
+    {
+        return $this->profile_image ? Storage::url('profile_images/'.$this->profile_image) : null;
+    }
 
     /**
      * The attributes that are mass assignable.
@@ -23,6 +37,7 @@ class User extends Authenticatable
         'email',
         'alamat',
         'no_hp',
+        'image',
         'bio',
         'password',
     ];

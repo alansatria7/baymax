@@ -8,17 +8,22 @@
     <title>Document</title>
 </head>
 <body>
-    @include('nav.nav')
+      
+  @include('nav.nav') 
     <div class="card">
+        <form action="{{route('profile.update', $user->id)}}" method="POST">
+            @csrf
         <div class="row">
             <div>
-                <p class="btprofile">Profile</p>
-                <img class="product-image" src="/img/org1.png" alt="">
+                <p class="btprofile">Edit Profile</p>
+                <img class="product-image" src="/img/org7.jpg" alt="">
             </div>
-            <form action="{{route('profile.update', $user->id)}}" method="POST">
-                @csrf
+
+
+            <div>
+            
                 <div class="row">
-    
+                    
                     <div>
                         <div class="mrgn-nama">
                             <p class="nama">Nama</p>
@@ -64,11 +69,12 @@
                     </a>
                     <button type="submit" class="button3">Update</button>
                 </div>
-            </form>
+            </div>
         </div>
+    </form>
     </div>
 
-      
-    @include('nav.footer')
+      @include('nav.footer')
+  
 </body>
 

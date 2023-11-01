@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/profile.css" />
+    <link rel="stylesheet" href="{{asset('/css/profile.css')}}" />
     <title>Document</title>
 </head>
 <body>
-    @include('nav.nav')
+    @include('nav.nav') 
+   
         <div class="card">
             <div class="row">
                 <div >
                     <p class="btprofile">Profile</p>
-                    <img class="product-image" src="img/org1.png" alt="">
+                    <img class="product-image" src="img/org7.jpg" alt="">
                 </div>
                 <div>
                     <div class="row">
@@ -69,8 +70,8 @@
         </div>
 
     
-        @include('nav.footer')
+      
 
- 
+        @include('nav.footer')
 
 </body>

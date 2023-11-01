@@ -8,8 +8,9 @@
    
     
        
-    <link rel="stylesheet" href="css/font.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+   
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/nav.css') }}" />
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/footer.css') }}" />
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://kit.fontawesome.com/76557bdb99.css" crossorigin="anonymous">
@@ -44,23 +45,23 @@
                         <div class="foo-footer-social">
                            <div class="foo1-row">
                                 <p class="foo-hov">
-                                    <a class="fooo-img1"  href="#"><img  class="intagram" src="img/insta1.png" alt="Instagram" ></a>
-                                    <a class="foo-top-img" href="#"><img class="intagram" src="img/insta2.png" alt="Instagram" ></a>
+                                    <a class="fooo-img1"  href="#"><img  class="intagram" src="{{asset('img/insta1.png')}}" alt="Instagram" ></a>
+                                    <a class="foo-top-img" href="#"><img class="intagram" src="{{asset('img/insta2.png')}}" alt="Instagram" ></a>
                                 </p>
 
                                 <p class="foo-hov">
-                                    <a  href="#"><img src="img/twitter1.png" alt="Twitter" ></a>
-                                    <a class="foo-top-img" href="#"><img src="img/twitter2.png" alt="Twitter" ></a>
+                                    <a  href="#"><img src="{{asset('img/twitter1.png')}}" alt="Twitter" ></a>
+                                    <a class="foo-top-img" href="#"><img src="{{asset('img/twitter2.png')}}" alt="Twitter" ></a>
                                 </p>
 
                                 <p class="foo-hov">
-                                    <a  href="#"><img src="img/yt1.png" alt="Youtube" ></a>
-                                    <a class="foo-top-img" href="#"><img src="img/yt2.png" alt="Youtube" ></a>
+                                    <a  href="#"><img src="{{asset('img/yt1.png')}}" alt="Youtube" ></a>
+                                    <a class="foo-top-img" href="#"><img src="{{asset('img/yt2.png')}}" alt="Youtube" ></a>
                                 </p>
 
                                 <p class="foo-hov">
-                                    <a  href="#"><img src="img/fb1.png" alt="Facebook" ></a>
-                                    <a class="foo-top-img" href="#"><img src="img/fb2.png" alt="Facebook" ></a>
+                                    <a  href="#"><img src="{{asset('img/fb1.png')}}" alt="Facebook" ></a>
+                                    <a class="foo-top-img" href="#"><img src="{{asset('img/fb2.png')}}" alt="Facebook" ></a>
                                 </p>
 
                         

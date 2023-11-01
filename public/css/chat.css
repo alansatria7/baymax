@@ -1,0 +1,36 @@
+.row {
+   
+    display: flex;
+
+    
+}
+.button{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cardChat {
+  
+    margin: 200px;
+    margin-left: 600px;
+    width: 220px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.cardChat img {
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-top: 8px;
+}
+
+.cardChat p {
+    font-weight: bold;
+    font-size: 20px;    
+}

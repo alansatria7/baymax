@@ -61,11 +61,11 @@ class ProfileController extends Controller
                 'alamat' => 'required|string',
                 'no_hp' => 'string|max:15',
                 'bio' => 'nullable|string',
-
-                // 'bio' => 'string'
+              
             ]);
-    
-         
+            
+          
+            
             try {
                 $profile->update($validatedData);
             } catch (\Throwable $th) {

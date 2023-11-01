@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,9 +6,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="/css/detailguru.css">
+    {{-- <link type="text/css" rel="stylesheet" href="/css/detailguru.css">
     <link type="text/css" rel="stylesheet" href="/css/font.css">
-    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css"> --}}
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/detailguru.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/font.css') }}">
+
+    <link type="text/css" rel="stylesheet" href="{{ asset('fontawesome/css/all.css') }}">
+    
+    
    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
@@ -16,9 +23,9 @@
 </head>
 
 <body>
-    
-    @include('nav.nav')
-    
+    @include('nav.nav') 
+
+    <div class="container">
     @if ($guru)
     <div class="container">
         <div class="row1">
@@ -39,7 +46,7 @@
                     </div>
                 </div>
                 <div class="tnt">
-                    <h2>Tentang Alan</h2>
+                    <h2>Tentang {{$guru->nama}}</h2>
                     <p class="tnt1">{{$guru->tentang}}</p>
                     <p>{{$guru->tentang_2}}</p>
                   
@@ -70,7 +77,7 @@
                         <p class="no">{{$guru->jumlah_murid}}</p>
                     </div>
                     <div class="bt">
-                        <a class="btn" href="/pembayaran">
+                        <a class="btn" href="/chat">
                             Reservesi Kursus</a>
 
                     </div>
@@ -143,10 +150,10 @@
                         <div class="card5">
                             <div class="card-image">
 
-                                <img class="pct" src="/img/org3.jpeg" alt="Image 1">
+                                <img class="pct" src="/img/org1.png" alt="Image 1">
 
-                                <div class="image-text">Adiarja Halimn</div>
-                                <div class="image-text1">Singocandi</div>
+                                <div class="image-text">Adiarja</div>
+                                <div class="image-text1">Bahasa Inggris</div>
                             </div>
 
                             <div class="card-content">
@@ -158,7 +165,7 @@
 
 
                                 <div class="row">
-                                    <a class="btn1" href="">Rp60.000/jam</a>
+                                    <a class="btn1" href="">Rp120.000/jam</a>
                                     <a class="btn23" href="">Sesi ke 1 gratis</a>
 
                                 </div>
@@ -170,10 +177,10 @@
                         <div class="card5">
                             <div class="card-image">
 
-                                <img class="pct" src="/img/org3.jpeg" alt="Image 1">
+                                <img class="pct" src="/img/org2.png" alt="Image 1">
 
-                                <div class="image-text">Adiarja Halimn</div>
-                                <div class="image-text1">Singocandi</div>
+                                <div class="image-text">Jessica</div>
+                                <div class="image-text1">Bahasa Jepang</div>
                             </div>
 
                             <div class="card-content">
@@ -199,8 +206,8 @@
 
                                 <img class="pct" src="/img/org3.jpeg" alt="Image 1">
 
-                                <div class="image-text">Adiarja Halimn</div>
-                                <div class="image-text1">Singocandi</div>
+                                <div class="image-text">Valencia</div>
+                                <div class="image-text1">Menyanyi</div>
                             </div>
 
                             <div class="card-content">
@@ -212,7 +219,7 @@
 
 
                                  <div class="row">
-                                    <a class="btn1" href="">Rp60.000/jam</a>
+                                    <a class="btn1" href="">Rp100.000/jam</a>
                                     <a class="btn23" href="">Sesi ke 1 gratis</a>
 
                                 </div>
@@ -226,10 +233,10 @@
                         <div class="card5">
                             <div class="card-image">
 
-                                <img class="pct" src="/img/org3.jpeg" alt="Image 1">
+                                <img class="pct" src="/img/org4.png" alt="Image 1">
 
-                                <div class="image-text">Adiarja Halimn</div>
-                                <div class="image-text1">Singocandi</div>
+                                <div class="image-text">Alli</div>
+                                <div class="image-text1">Matematika</div>
                             </div>
 
                             <div class="card-content">
@@ -241,7 +248,7 @@
 
 
                                 <div class="row">
-                                    <a class="btn1" href="">Rp60.000/jam</a>
+                                    <a class="btn1" href="">Rp75.000/jam</a>
                                     <a class="btn23" href="">Sesi ke 1 gratis</a>
 
                                 </div>
@@ -253,10 +260,10 @@
                         <div class="card5">
                             <div class="card-image">
 
-                                <img class="pct" src="/img/org3.jpeg" alt="Image 1">
+                                <img class="pct" src="/img/org5.png" alt="Image 1">
 
-                                <div class="image-text">Adiarja Halimn</div>
-                                <div class="image-text1">Singocandi</div>
+                                <div class="image-text">Shinta</div>
+                                <div class="image-text1">Bahasa Mandarin</div>
                             </div>
 
                             <div class="card-content"> 
@@ -268,7 +275,7 @@
 
 
                                 <div class="row">
-                                    <a class="btn1" href="">Rp60.000/jam</a>
+                                    <a class="btn1" href="">Rp90,000/jam</a>
                                     <a class="btn23" href="">Sesi ke 1 gratis</a>
 
                                 </div>
@@ -280,10 +287,10 @@
                         <div class="card5">
                             <div class="card-image">
 
-                                <img class="pct" src="/img/org3.jpeg" alt="Image 1">
+                                <img class="pct" src="/img/org6.png" alt="Image 1">
 
-                                <div class="image-text">Adiarja Halimn</div>
-                                <div class="image-text1">Singocandi</div>
+                                <div class="image-text">Shinta</div>
+                                <div class="image-text1">Akuntansi</div>
                             </div>
 
                             <div class="card-content">
@@ -295,7 +302,7 @@
 
 
                                  <div class="row">
-                                    <a class="btn1" href="">Rp60.000/jam</a>
+                                    <a class="btn1" href="">Rp150,000/jam</a>
                                     <a class="btn23" href="">Sesi ke 1 gratis</a>
 
                                 </div>
@@ -310,9 +317,9 @@
           
         </div>  
 
+    </div>
 
-
-        {{-- @include('nav.footer')  --}}
+        @include('nav.footer') 
      
 
 
@@ -434,4 +441,4 @@
 
 
 
-</body> --}}
+</body> 

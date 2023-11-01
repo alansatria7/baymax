@@ -326,6 +326,8 @@
     margin-left: 120px;   
     width: 160px;
     height: 160px;
+    object-fit: cover;
+    
 }
 
 .card-content1 {
@@ -416,6 +418,7 @@
    
 }
 .bt{
+  
     margin-top: 15px;
     margin-left: 95px;
     border-radius: 20px;
@@ -429,6 +432,7 @@
 }
 .btn{
     color: white;
+    text-decoration: none;
 }
 
 

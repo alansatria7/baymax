@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/font.css" />
-    <link rel="stylesheet" href="css/nav.css" />
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/font.css') }}" />
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/nav.css') }}" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head> 
 <header>
@@ -27,7 +27,7 @@
             <a href="/listteacher">Daftar Les</a>
         </div>
     </div>
-      <a href="">Konsultasi</a>
+      <a href="/chat">Konsultasi</a>
 
       </div>
     </div>
@@ -54,7 +54,7 @@
     <div class="avatar-dropdown">
       <a class="avatar-dropbtn" id="avatar-button">
         <div class="row">
-          <img class="avatar" src="img/org3.jpeg" alt="User Avatar">
+          <img class="avatar" src="/img/org7.jpg" alt="User Avatar">
     
         </div>
        
@@ -62,12 +62,13 @@
       <div class="avatar-dropdown-content" id="avatar-dropdown-content">
         <div class="prfl">
           <div class="centered-content">    
-              <img class="avatar2" src="img/org3.jpeg" alt="User Avatar">
+              <img class="avatar2" src="/img/org7.jpg" alt="User Avatar">
                 <div>
 
                     
-                    {{-- <p class="prfl2">{{$user->name}}</p>
-                    <p class="prfl3">{{$user->email}}</p> --}}
+                  <p class="prfl2">{{ strlen(auth()->user()->name) > 5 ? substr(auth()->user()->name, 0, 10) . '' : auth()->user()->name }}</p>
+                  <p class="prfl3">{{ strlen(auth()->user()->email) > 5 ? substr(auth()->user()->email, 0, 15) . '' : auth()->user()->email }}</p>
+                
               </div>
           </div>
         </div>

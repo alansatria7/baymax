@@ -2,9 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthenticationController;
-use App\Http\Controllers\DetailController;
-use App\Http\Controllers\Detail_2Controller;
-use App\Http\Controllers\Detail_3Controller;
+
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\ProfileController;
 
@@ -87,6 +85,11 @@ Route::get('/login', function () {
 Route::get('/home', function () {
     return view('home');
 });
+
+Route::get('/chat', function () {
+    return view('chat');
+});
+
 
 
 route::get('/listteacher', [GuruController::class, 'index']);

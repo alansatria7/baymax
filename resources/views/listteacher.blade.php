@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,23 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="/css/listteacher.css" />
-    <link  type="text/css" rel="stylesheet" href="/css/font.css">
-    <link  rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="{{asset('css/listteacher.css')}}" />
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/font.css') }}">
+    <link  rel="stylesheet" href="{{asset('fontawesome/css/all.css')}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
   
   @include('nav.nav') 
-    <!-- header section starts  -->
-
-    
-   
+    <!-- header section starts  -->  
+ 
 
     <h2 class="mtr" >Guru semua materi</h2>
+    <form action="/listteacher" method="GET" id="filterForm"> 
+      <select name="mapel" id="mapel" onchange="handleChange()">
+          <option value="">Semua Mapel</option>
+          @foreach ($mapels as $mapel)
+              <option class="menu22" value="{{ $mapel }}" {{ $selectedMapel == $mapel ? 'selected' : '' }}>
+                  {{ $mapel }}
+              </option>
+          @endforeach
+      </select>
+  </form>
+
+
       
-      
-    <div class="row01">
+    {{-- <div class="row01">
    
         <div class="dropdown">
           <div class="select">
@@ -61,33 +71,10 @@
         </div>  
       </div>
       
-    </div>
+    </div> --}}
   
-    <div class="overlay"></div>
-    <h2 class="terse" >190 Guru  tersedia</h2>
-
-
-    <form action="/listteacher" method="GET" id="filterForm">
-      <select class="selected" name="mapel" id="mapel" onchange="handleChange()">
-         
-           <option class="selected" value="">Semua Mapel</option>
-
-            
-          @foreach ($mapels as $mapel)
-          <ul class="menu">
-              <option  value="{{ $mapel }}" {{ request('mapel') == $mapel ? 'selected' : '' }}>
-                  {{ $mapel }}
-              </option>
-          </ul>
-          @endforeach
-            
-      </select>
-
-    </form>
-   
- 
-
-    
+    {{-- <div class="overlay"></div> --}}
+    <h2 class="terse" >6 Guru  tersedia</h2>
 
 
 
@@ -234,18 +221,10 @@
     
     </section>
       
-    @include('nav.footer')
+    @include('nav.footer') 
 
     <script  >
-       function handleChange() {
-        var select = document.getElementById('mapel');
-
-        // Jika memilih "Semua Mapel", atur nilai select menjadi kosong
-        if (select.value === 'Semua Mapel') {
-            select.value = '';
-        }
-
-        // Submit formulir secara otomatis
+        function handleChange() {
         document.getElementById('filterForm').submit();
     }
 
@@ -431,3 +410,4 @@ dropdowns.forEach(dropdown => {
     
 </body>
 </html>
+
